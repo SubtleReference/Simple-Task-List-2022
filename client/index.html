@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do List 2022</title>
+    
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <main class="app">
+        <section class = "greeting"> 
+            <h2 align="center" class = "title"> How's it going <input type ="text" id="name" placeholder="Name here"><br><br>
+            </h2>
+        </section>
+    <section class="create-list">
+        <h1>Let's Create a To Do List</h1>
+        <form id="new-task-form">
+            <input 
+
+                type="text"  
+                name="content"
+                id="new-task-input"
+                placeholder="What would you like to add to the list?"/>
+            <input type="submit" 
+            id="new-task-submit"
+            value="Add task" />
+        </form>
+    </section>
+        <section class="task-list"> 
+            <h2>These are the Tasks You Have so Far</h2>
+
+            <div id="tasks">
+                <!--div class="task">
+                    <div class="content">
+                    <input 
+                    type="text" 
+                    class="text"
+                    
+                    />
+                </div>
+                <div class="actions">
+                    <button class="edit">Edit</button>
+                    <button class="delete">Delete</button>
+                     </div-->
+                 </div>
+                 
+            </div>
+        </section>
+    </main>
+   <!--script> function pageLoaded(){
+    const content = localStorage.getItem("todos")
+    if(content){
+        document.getElementById("tasks").value = content
+    }
+    document.getElementById("tasks").addEventListener("change", afterChange)
+    document.getElementById("new-task-input").addEventListener("input", afterInput)
+}
+
+    function afterChange(e){
+        localStorage.setItem("todos", e.target.value)
+    }
+    function afterInput(e){
+        localStorage.setItem("todos", e.target.value)
+    }
+    document.addEventListener("DOMContentLoaded", pageLoaded)
+
+    </script--> <script src="main.js"></script>
+</body>
+</html>
